@@ -1,0 +1,117 @@
+h4 {
+    text-align: center;
+    background:linear-gradient(90deg, rgba(247,0,0,1) 0%, rgba(255,113,3,1) 48%, rgba(251,144,0,1) 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.image-container{
+    margin: 0 ;
+    position: absolute;
+    right:35%;
+    top: 10%;
+   
+}
+
+.robo img{
+    max-width: 500px;
+    margin: 0;
+    z-index: -1;
+    position: relative;
+    animation: animate 2s ease-in-out infinite ;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.robo_back img{
+    width:500px;
+    margin: 0;
+    z-index: -10;
+    position: absolute;
+    top: 0;
+}
+.button{
+    display: flex;
+    justify-content: center;
+
+}
+
+.thanku-to-home{
+
+    padding: 10px 40px 10px 40px ;
+    background: none;
+    border: 2px solid rgb(255, 98, 0) ;
+    font-size: 20px;
+    color:rgb(255, 98, 0);
+    border-radius: 2px;
+    transition: 0.2s;
+}
+.thanku-to-home:hover{
+    background-color:rgb(255, 98, 0) ;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    h4 {
+        font-size: 40px; 
+    }
+
+    .image-container {
+        right: 20%; 
+        top: 15%; 
+    }
+
+    .robo img, .robo_back img {
+        max-width: 400px;
+    }
+
+    .thanku-to-home {
+        font-size: 18px; 
+        padding: 8px 30px; 
+}
+}
+
+@media (max-width: 480px) {
+    h4 {
+        font-size: 32px; /* Reduce heading size for mobile */
+        margin-top: 20px;
+    }
+
+    .image-container {
+        position: relative; /* Center it */
+        right: auto;
+        top: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .robo img, .robo_back img {
+        max-width: 300px; /* Further reduce image size */
+    }
+    .robo_back img{
+        left:17%
+    }
+    .robo img{
+        z-index:-1;
+    } 
+    .button {
+        flex-direction: column; /* Stack button */
+        align-items: center;
+    }
+
+    .thanku-to-home {
+        font-size: 16px; /* Reduce button text size */
+        padding: 8px 25px; /* Adjust padding */
+    }
+}

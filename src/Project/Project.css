@@ -1,0 +1,162 @@
+.project{
+    padding:0p 20px 0px 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.project p{
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    margin-top: 30px;
+    color:rgb(255, 98, 0) ;
+}
+
+ .project h3{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 33px;
+    font-family:"Alfa Slab One"
+}
+.card{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 20px 50px 20px;
+    
+}
+.project1,.project2,.project3{
+    margin-top: 30px;
+    background-color:  #020512;
+    width: 450px;
+    max-width: 450px;
+    height:400px;
+    padding:30px 10px 150px 10px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.des3 h4{
+    font-size: 25px;
+    -webkit-backface-visibility: text;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    margin: 0;
+    margin-top: 85px;
+}
+.des1,.des2,.des3{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    gap:10px;
+}
+.des1 h4,.des2 h4{
+    font-size: 25px;
+    -webkit-backface-visibility: text;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    margin: 0;
+    margin-top: 30px;
+}
+.des1 p,.des2 p,.des3 p{
+    color: rgb(173, 173, 173);
+    font-size: 20px;
+    margin: 0;
+}
+.des1 h3,.des2 h3,.des3 h3{
+    color: rgb(255, 85, 0);
+    font-size: 30px;
+    margin: 0;
+    margin-top: 20px;
+}
+.project1 img,.project2 img,.project3 img{
+    max-width: 400px;
+
+    width: 270px;
+    margin:0px 40px 0px 80px;
+    border-radius:3px;
+    transition: 0.3s;
+}
+.project1 h3,.project2 h3,.project3 h3{
+    font-family: "outfit";
+}
+.project1:hover,.project2:hover,.project3:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(255, 68, 0, 0.622);
+}
+.project1 img:hover,.project2 img:hover,.project3 img:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 20px;
+    }
+
+    .project1, .project2, .project3 {
+        width: 350px; 
+        height: auto; 
+        padding: 20px;
+    }
+
+    .project1 img, .project2 img, .project3 img {
+        width: 240px; /* Reduce image size */
+        margin: 0 auto; /* Center the image */
+        display: block;
+    }
+
+    .project p {
+        font-size: 35px; /* Reduce font size */
+    }
+
+    .project h3 {
+        font-size: 28px;
+    }
+
+    .des1 h4, .des2 h4, .des3 h4 {
+        font-size: 22px;
+    }
+
+    .des1 p, .des2 p, .des3 p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+        gap: 15px;
+    }
+
+    .project1, .project2, .project3 {
+        width: 90%; /* Full width with some margin */
+        max-width: 350px;
+        padding: 15px;
+    }
+    .project3{
+        width:400px
+    }
+
+    .project1 img, .project2 img, .project3 img {
+        width: 200px; /* Further reduce image size */
+        margin: 0 auto;
+    }
+
+    .project p {
+        font-size: 28px;
+    }
+
+    .project h3 {
+        font-size: 24px;
+    }
+
+    .des1 h4, .des2 h4, .des3 h4 {
+        font-size: 20px;
+    }
+
+    .des1 p, .des2 p, .des3 p {
+        font-size: 16px;
+    }
+}

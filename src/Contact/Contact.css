@@ -1,0 +1,274 @@
+.contact-details{
+    background-color:#080C15;
+    margin: auto;
+    height: 800px;
+    margin: 0px 150px 30px 150px;
+    border-radius: 4px;
+    box-shadow: 0px 10px 20px rgba(255, 98, 0, 0.552);
+}
+.contact-details p,
+.contact-details h1{
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.contact-details h1{
+    font-size: 60px;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.contact-details p{
+    font-size: 20px;
+    color: #7B818C;
+}
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    gap: 100px;
+    width:100%
+}
+.email img,.phone img,.location img{
+    width: 50px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.email p,.phone p,.location p{
+  
+    text-align: center;
+    font-size: 20px;
+    margin: -20px;
+    text-align: center;
+    color: wheat;
+}
+.email ,.phone ,.location {
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+.email h2 ,.phone h2 ,.location h2{
+    margin-top: -2px;
+}
+.email:hover ,
+.phone:hover ,
+.location:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.details a{
+    text-decoration: none;
+    color: white;
+}
+.details p{
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: #9e9e9e;
+}
+label{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    color: #a8a8a8 ;
+    font-weight: 400;
+}
+input{
+    width: 600px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 200;
+    background-color: #334155;
+    color: #f4f4f4;
+    border: none;
+    padding: 0px 0px 0px 10px;
+    border-radius: 3px;
+}
+
+.enter-details {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust as needed */
+  }
+  
+  .form-container {
+    display: flex;
+    gap: 50px; /* Space between left and right columns */
+    width: 100%;
+  }
+  
+  .left-column {
+    flex: 1; /* Take up 50% of the space */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between inputs */
+  }
+  
+  .right-column {
+    flex: 1; /* Take up 50% of the space */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  textarea {
+    max-width: 450px;
+    max-height: 240px;
+    width:450px; /* Full width of the right column */
+    height: 240px; /* Adjust height as needed */
+    background-color: #334155;
+    border: none;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  .submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* Space above the submit button */
+    width: 100%;
+  }
+  
+  .submit input {
+    background-color: rgb(255, 98, 0);
+    width: 500px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .submit input:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  /* Responsive Design for Tablets (768px) */
+@media screen and (max-width: 768px) {
+  .contact-details {
+      margin: 0px 30px 30px 30px; /* Reduce side margins further */
+      height: auto; /* Allow dynamic height */
+      padding-bottom: 20px;
+  }
+
+  .contact-details h1 {
+      font-size: 45px; /* Adjust heading size */
+  }
+
+  .contact-details p {
+      font-size: 18px;
+  }
+
+  .details {
+      flex-direction: column; /* Stack contact details vertically */
+      gap: 60px;
+  }
+
+  .email img, .phone img, .location img {
+      width: 40px; /* Reduce icon size */
+  }
+
+  .form-container {
+      flex-direction: column; /* Stack form fields */
+      width: 100%; /* Take full width */
+      padding: 0 20px; /* Reduce space on sides */
+  }
+
+  .left-column, .right-column {
+      width: 100%; /* Make fields full width */
+  }
+
+  input
+  {
+    width: 500px;
+
+  }
+textarea {
+      width: 100%; 
+      height: 55px; /* Increase height for better touch */
+      font-size: 18px;
+  }
+
+  textarea {
+      height: 220px; /* Adjusted textarea height */
+  }
+
+  .submit {
+      width: 100%; /* Full width */
+      display: flex;
+      justify-content: center;
+      
+  }
+
+  .submit input {
+      width: 50%; /* Full width button */
+      height: 55px;
+      font-size: 20px;
+  }
+
+}
+
+/* Responsive Design for Mobile (480px) */
+@media screen and (max-width: 480px) {
+  .contact-details {
+      margin: 0px 15px; /* Even less side margin */
+      padding-bottom: 20px;
+  }
+
+  .contact-details h1 {
+      font-size: 35px; /* Smaller heading */
+  }
+
+  .contact-details p {
+      font-size: 16px;
+  }
+
+  .details {
+      gap: 50px; /* Reduce space between contact items */
+  }
+
+  .email img, .phone img, .location img {
+      width: 35px; /* Further reduce icon size */
+  }
+
+  .form-container {
+      width: 100%; /* Full width */
+      padding: 0 10px;
+  }
+
+  .left-column, .right-column {
+      width: 100%;
+  }
+
+  input, textarea {
+    width: 300px;
+    margin: auto;
+      /* width: 80%; */
+      height: 50px; /* More comfortable height */
+      font-size: 18px;
+  }
+  .enter-details label{
+    margin-left: 18px;
+  }
+
+  textarea {
+      height: 200px; /* Reduce textarea height */
+  }
+
+  .submit {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .submit input {
+    padding: 0px 20px ;
+      width: 100%;
+      height: 50px;
+      font-size:20px;
+      font-weight: 700;
+  }
+
+}

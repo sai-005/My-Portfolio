@@ -1,0 +1,68 @@
+.resume-whole{
+    background-color: #080C15;
+    margin: auto;
+    margin-bottom: 40px;
+    width: 80%;
+    height: 1350px;
+    border-radius: 3px;
+}
+
+.resume
+{
+    display: flex;
+    justify-content:space-evenly;
+
+}
+iframe{
+    margin: 0px 0px 30px 0px;
+}
+ .resume-whole p
+{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .resume-whole {
+        width: 90%; 
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .resume {
+        flex-direction: column; /* Stack elements */
+        align-items: center; /* Center align items */
+    }
+
+    iframe {
+        width: 90%; /* Adjust width for better responsiveness */
+        height: 500px; /* Set a fixed height */
+    }
+
+    .resume-whole p {
+        font-size: 26px; /* Reduce font size */
+    }
+}
+@media (max-width: 480px) {
+    .resume-whole {
+        width: 95%; /* Almost full width */
+        padding-bottom: 20px;
+    }
+
+    .resume {
+        flex-direction: column; /* Ensure elements are stacked */
+        align-items: center;
+    }
+
+    iframe {
+        width: 100%; /* Full width on small screens */
+        height: 400px; /* Reduce height */
+    }
+
+    .resume-whole p {
+        font-size: 22px; /* Adjust for better readability */
+        padding-top: 30px; /* Reduce top padding */
+    }
+}

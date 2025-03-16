@@ -1,0 +1,240 @@
+.About h1{
+    text-align: center;
+    margin: 30px auto;
+    font-size: 40px;
+}
+.About h6{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    font-size: 23px;
+    font-weight: 300;
+    color:rgb(169, 169, 169) ;
+    margin-top: 50px;
+   margin-bottom: 40px;
+}
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+.container{
+
+    position: relative;
+    width:50%;
+    padding:10px 50px;
+    margin-bottom: 90px;
+}
+.text-box{
+    position: relative;
+    padding: 10px 20px 10px 20px;
+    background-color:#080C15;
+    border-radius: 3px;
+}
+.left-cotainer{
+    left: -10%;
+}
+.right-cotainer{
+    left:50%;
+    padding:10px 50px 10px 20px;
+}
+.container-img1{
+    width:30px;
+    padding: 10px;
+    background-color:rgb(255, 98, 0);
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    right: 50%;
+    top: 32px;
+    z-index: 10;
+
+}
+.container-img2, .container-img3 {
+    width: 30px;
+    padding: 10px;
+    background-color: rgb(255, 98, 0);
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+}
+.container-img2 {
+    left: 45.5%; /* Align with the timeline line */
+    top: 40%; /* Adjust top position as needed */
+
+}
+
+.container-img3 {
+    left: 45.5%; /* Align with the timeline line */
+    top: 76%; /* Adjust top position as needed */
+}
+.container h5{
+    position: absolute;
+    right:-100px;
+    top:30px;
+    color:#949494;
+    word-spacing: 3px;
+}
+.right-cotainer h5{
+    left:-130px;
+    top:30px;
+}
+.right-cotainer img{
+    left: -50px;
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    width:6px;
+    height: 100%;
+    background:white;
+    top: 0;
+    left: 48%;
+    margin-left: -3px;
+    z-index:-1;
+    animation: moveline 1s linear;
+    animation-timeline: scroll();
+}
+    
+@keyframes moveline{
+    0%{
+        height: 0;
+    }
+    50%{
+       height: 50%;
+    }
+
+    100%{
+        height: 100%;
+    }
+} 
+.text-box h2{
+    font-size: 23px;
+    font-weight: 600;
+    color:rgb(201, 95, 30);
+    word-spacing: 5px;
+}
+.text-box p{
+    font-size: 20px;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: rgb(210, 210, 210);
+}
+.text-box small{
+    font-size: 15px;
+    color:rgb(210, 210, 210) ;
+}
+.left-container-arrow{
+    position:absolute;
+    top:28px;
+    z-index: 1;
+    height: 0;
+    width: 0;
+    border-top: 10px solid transparent;
+    border-bottom:10px solid transparent ;
+    border-left:10px solid #101623 ;
+    right: -9px;
+}
+.right-container-arrow{
+    position:absolute;
+    top:28px;
+    z-index: 1;
+    height: 0;
+    width: 0;
+    border-top: 10px solid transparent;
+    border-bottom:10px solid transparent ;
+    border-right:10px solid #101623 ;
+    left: -9px;
+}
+/* 📌 Responsive for 768px (Tablets) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Full width */
+        padding: 10px 20px; /* Adjust padding */
+    }
+
+    .right-cotainer, .left-cotainer {
+        left: 0; /* Align all containers */
+    }
+
+    .container h5 {
+        position: relative;
+        right: auto;
+        left: auto;
+        text-align: left;
+        margin-bottom: 10px;
+        top:10%;
+        left:8%
+    }
+
+    .container-img1{
+        left: -5px; /* Move images to the left */
+        top: 8%;
+    }
+    .container-img2{
+        left: -5px; /* Move images to the left */
+        top: 45%;
+    }
+    .container-img3 {
+        left: -5px; /* Move images to the left */
+        top: 81%;
+    }
+    .text-box {
+        margin-left: 60px; /* Push text-box to the right */
+    }
+
+    .timeline::after {
+        left: 20px; /* Adjust timeline position */
+    }
+
+    .left-container-arrow, .right-container-arrow {
+        left: -9px;
+        border-left: none;
+        border-right: 10px solid #101623; /* Arrow pointing left */
+    }
+}
+
+/* 📌 Responsive for 480px (Mobile) */
+@media (max-width: 480px) {
+    .About h6{
+        text-align: center;
+        width: 400px;
+    }
+    .timeline {
+        margin: 30px auto;
+    }
+
+    .container {
+        width: 100%; /* Full width */
+        padding: 10px 10px; /* Adjust padding */
+        display: flex;
+        align-items: center;
+    }
+
+    .container-img1 {
+        left: -5px; /* Push images to the left */
+        top:2%;
+    }
+    .container-img2{
+        left: -5px; /* Push images to the left */
+        top:40%;
+    }
+    .container-img3{
+        left: -5px; /* Push images to the left */
+        top:75%;
+    }
+    .text-box {
+        width: calc(100% - 70px); /* Make text-box occupy remaining space */
+        margin-left: 60px;
+    }
+
+    .timeline::after {
+        left: 20px; /* Adjust line position */
+    }
+
+    .left-container-arrow, .right-container-arrow {
+        left: -9px;
+        border-left: none;
+        border-right: 10px solid #101623; /* Ensure arrows point left */
+    }
+}
