@@ -4,13 +4,14 @@
     justify-content: center;
     align-items: center;
     margin: 100px 0 30px 0;
+    margin-top:-2px;
     gap: 15%;
 }
 
 
 .about img {
     width: 400px;
-    margin: 10px;
+    margin: 10px ;
     border-radius: 50%;
     box-shadow: 0px 0px 40px rgb(255, 98, 0);
     transition: 0.4s ease-in-out;
@@ -91,11 +92,13 @@
     cursor: pointer;
     color: white;
     background-color: rgb(255, 98, 0);
+   
 }
 
 
 @media (max-width: 768px) {
     .about {
+        margin-top:-2%;
         display: flex;
         justify-content:center;
         flex-direction: column; 
@@ -107,7 +110,7 @@
         width: 500px; 
     }
     .about_img{
-        margin-left:7%;
+        margin:auto;
         margin-top: 5%;
     }
 
@@ -135,7 +138,7 @@
 
     .hero-resume, .hero-reach {
         text-align: center;
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -149,11 +152,12 @@
     }
 
     .about img {
-        width: 400px;
+        width: 350px;
     }
 
     .about_text {
-        width: 90%;
+        margin-top:-10%;
+         width: 90%;
         text-align:start;
     }
 
@@ -173,10 +177,11 @@
 
     .hero {
         display: flex;
-        justify-content: center;
+        justify-content:space-evenly;
         flex-direction: column;
         gap: 20px;
-        align-items: center;
+        margin-right: 20px;
+        align-items:center;
     }
 
     .hero-resume, .hero-reach {

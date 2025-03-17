@@ -3,16 +3,17 @@ import gsap from 'gsap'
 import { Document, Page, pdfjs } from 'react-pdf';
 import "./Resume.css";
 const Resume = () => {
- const textRefs=useRef(null);
+ const resumeRefs=useRef([]);
     useEffect(()=>{
-        gsap.fromTo(textRefs.current,
+        gsap.fromTo(resumeRefs.current,
             {y:100,opacity:0,duration:1},
             {y:0,opacity:1,duration:1}
         )
     })
   return (
-    <div className='resume-whole'>
-    <p ref={textRefs}>Resume | Saipranav Sapare</p>
+    <div  ref={(el)=>(resumeRefs.current[1]=(el))} className='resume-whole'>
+    <p >Resume | Saipranav Sapare</p>
+    <div className='download'><a href="updated_resume.pdf"  target="_blank" rel='noopener noreferrer'>Download</a></div>
     <div className='resume'>
     <iframe
         src="updated_resume.PDF"

@@ -3,10 +3,37 @@
     margin: auto;
     margin-bottom: 40px;
     width: 80%;
-    height: 1350px;
+    height: 1450px;
     border-radius: 3px;
 }
-
+.download{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: antiquewhite;
+    background-color: rgb(255, 98, 0);
+    border: none;
+    border-radius: 3px;
+    margin: auto;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+/* .download:hover{
+    opacity: 0.9;
+    background-color: #080C15;
+    border: 0.5px solid;
+    transform: scale(1.1);
+    border-color:rgb(255, 98, 0) ;
+} */
+.resume-whole a{
+    color: antiquewhite;
+    text-decoration: none;
+    margin:auto;
+}
 .resume
 {
     display: flex;

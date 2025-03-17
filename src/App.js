@@ -1,5 +1,6 @@
 
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
+import "./App.css"
 import Home from './Home/Home';
 import Navbar from './Navbar/Navbar';
 import Skills from './Skills/Skills';
@@ -15,10 +16,8 @@ function App() {
     <div>
  
  <Router>
-
  <Navbar/>
  <Aurora/>
- 
   <Routes>
     <Route path='/' element={<HomewithSkillsandFooter/>}/>
     <Route path="/contact" element={<ContactwithFooter/>}/>
