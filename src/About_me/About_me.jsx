@@ -82,7 +82,7 @@ const About_me = () => {
         <div ref={(el)=>(sliderLeft.current[1]=el)} className="container left-cotainer">
         <h5>2022-2026</h5>
             <div className="text-box">
-                <h2>S.V.U Collge of Engineering,Tirupathi</h2>
+                <h2>S.V.U College of Engineering,Tirupathi</h2>
                 <p>B.Tech - Computer Science Engineering</p>
                 <small>CGPA : 8.17</small>
                 <span className="left-container-arrow"></span>

@@ -22,7 +22,7 @@ useEffect(()=>{
     gsap.fromTo(imageRef.current,
         {y:-100,opacity:0,duration:1},
         {y:100,opacity:1,duration:1}
-    )})
+    )},[])
 
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
   const [errors, setErrors] = useState({});

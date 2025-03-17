@@ -6,7 +6,6 @@ import Typed from 'typed.js';
 import { gsap } from 'gsap';
 
 
-
 const Home = () => {
   const typedElement = useRef(null);
   const imageRef = useRef(null);

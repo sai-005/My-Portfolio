@@ -15,7 +15,7 @@ const Resume = () => {
     <p ref={textRefs}>Resume | Saipranav Sapare</p>
     <div className='resume'>
     <iframe
-        src="UPDATED RESUME 2.PDF"
+        src="updated_resume.PDF"
         width="80%"
         height="1200px"
         title="Resume PDF"

@@ -1,18 +1,26 @@
-import React from 'react'
+import React, { useEffect,useRef} from 'react'
 import { useState } from 'react'
 import './Navbar.css'
 import logo from '../assets/logo.png'
-import day_night from '../assets/day-night.png'
 import {Link} from 'react-router-dom'
 import menu_open from "../assets/menu-open.png"
 import menu_close from "../assets/menu-close.png"
-const Navbar = () => {
+import gsap from 'gsap';
 
+const Navbar = () => {
+  // const textRefi=useRef(null);
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  // useEffect(()=>{
+  //   gsap.fromTo(textRefi.current,
+  //       {y:-100,opacity:0,duration:1},
+  //       {y:0,opacity:1,duration:1},
+
+  //   )},[])
 
   return (
     <div className="navbar">
