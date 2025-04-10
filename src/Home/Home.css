@@ -60,7 +60,8 @@
 .about_text p:nth-child(4) {
     font-size: 20px;
     color: rgb(137, 137, 137);
-    margin-top: 10px;
+    margin-top:-10px;
+    margin-bottom:-3px;
 }
 
 .typed, p:nth-child(3) {

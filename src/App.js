@@ -11,6 +11,8 @@ import Resume from './Resume/Resume';
 import Project from './Project/Project';
 import About_me from './About_me/About_me';
 import Aurora from './Aurora/Aurora';
+import Arrow_up from './Arrow_up/Arrow_up';
+
 function App() {
   return (
     <div>
@@ -18,6 +20,7 @@ function App() {
  <Router>
  <Navbar/>
  <Aurora/>
+ <Arrow_up/>
   <Routes>
     <Route path='/' element={<HomewithSkillsandFooter/>}/>
     <Route path="/contact" element={<ContactwithFooter/>}/>
@@ -25,6 +28,7 @@ function App() {
     <Route path='/Resume' element={<ResumewithFooter/>}/>
     <Route path='/Project' element={<ProjectwithFooter/>}/>
     <Route path="/about-me" element={<About_mewithFooter />} />
+ 
     </Routes>
  </Router>
   </div>

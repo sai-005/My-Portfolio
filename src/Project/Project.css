@@ -30,7 +30,7 @@ a{
 .project1,.project2,.project3{
     margin-top: 30px;
     background-color:  #020512;
-    width: 450px;
+    width: 430px;
     max-width: 450px;
     height:400px;
     padding:30px 10px 150px 10px;
@@ -42,7 +42,7 @@ a{
     -webkit-backface-visibility: text;
     -webkit-text-fill-color: rgb(255, 255, 255);
     margin: 0;
-    margin-top: 85px;
+    margin-top: 5px;
 }
 .des1,.des2,.des3{
     display: flex;

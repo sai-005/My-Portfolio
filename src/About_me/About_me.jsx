@@ -63,7 +63,6 @@ const About_me = () => {
             <h6>Iam keenly interested in developing software's that will lead to the betterment of future,also I'am in the field of Web-development and UI/UX designing.</h6>
         </h6>
        <h6 ref={(el)=>(textReff.current[3]=el)}>A fast-paced learner with deep interest in understanding fundamentals or basics.Skilled at writing codes which are very well functional and can be implemented easily. 
-        
        </h6>
         <h1 ref={(el)=>(textReff.current[4]=el)}>Education</h1>
         <h6 ref={(el)=>(textReff.current[5]=el)}>This is the section where I describe my Education where i have studied from. </h6>

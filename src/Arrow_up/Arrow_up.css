@@ -1,0 +1,22 @@
+.arrow_up{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    position:fixed;
+    bottom: 20px;
+    right:20px;
+    z-index: 1000;
+        
+}
+.arrow_up__img{
+    background-color:#ff8412;
+    border-radius:50%;
+    width: 60px;
+    border:2px solid #ff8412;
+    transition: 0.3s all;
+}
+
+.arrow_up__img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
