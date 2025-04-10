@@ -1,7 +1,13 @@
 html {
     scroll-behavior: smooth;
 }
+.logo{
 
+}
+.logo:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
 .navbar {
     margin:0;
     padding: 0;
@@ -21,10 +27,6 @@ html {
     margin-left: 20px;
 }
 
-.navbar img:hover {
-    transform: scale(1.2);
-}
-
 .navbar ul {
     display: flex;
     gap:40px;
@@ -39,6 +41,39 @@ html {
     width: fit-content;
 }
 
+.link_nav.active{
+    text-decoration:#ff8412 underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+    color:#ffffff;
+    /* border-bottom: 5px solid #ff8412; */
+    border-radius:15px;
+    transition: 0.8s all;
+    height: max-content;
+    animation: grow 0.4s ease-in-out;
+}
+
+@keyframes grow{
+    0%{
+        transform: scale(1.0);
+        text-underline-offset: -20px;
+        z-index: 2000;
+        
+        
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+.contact_but.active{
+    background-color: transparent;
+    color:none;
+    transition: none;
+    animation: none;
+}
 .navbar li {
     margin: 10px 10px 10px 10px;
     /* margin: auto; */
@@ -51,8 +86,7 @@ html {
     color: #ffffff;
     max-width:600px ;
     cursor: pointer;
-    color: #ff8412;
-    transform: translateY(-5px);
+    /* transform: translateY(-5px); */
 }
 
 .navbar button {
@@ -87,6 +121,7 @@ html {
     height: 50px;
     cursor: pointer;
 }
+
 
 /* Responsive navbar */
 @media (max-width: 768px) {
@@ -135,6 +170,8 @@ html {
         top:10%;
     } */
 }
+
+
 @media (max-width:480px){
     .navbar{
         height:100%;
