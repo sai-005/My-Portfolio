@@ -91,33 +91,33 @@ input{
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    max-width: 1200px; /* Adjust as needed */
-  }
-  
-  .form-container {
+    max-width: 1200px;
+}
+
+.form-container {
     display: flex;
-    gap: 50px; /* Space between left and right columns */
+    gap: 50px;
     width: 100%;
-  }
-  
-  .left-column {
-    flex: 1; /* Take up 50% of the space */
+}
+
+.left-column {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Space between inputs */
-  }
-  
-  .right-column {
-    flex: 1; /* Take up 50% of the space */
+    gap: 10px;
+}
+
+.right-column {
+    flex: 1;
     display: flex;
     flex-direction: column;
-  }
-  
-  textarea {
+}
+
+textarea {
     max-width: 450px;
     max-height: 240px;
-    width:450px; /* Full width of the right column */
-    height: 240px; /* Adjust height as needed */
+    width:450px;
+    height: 240px;
     background-color: #334155;
     border: none;
     border-radius: 2px;
@@ -125,36 +125,37 @@ input{
     font-size: 20px;
     margin-top: 10px;
     padding: 10px;
-  }
-  
-  .submit {
+}
+
+.submit {
     display: flex;
     justify-content: center;
-    margin-top: 40px; /* Space above the submit button */
+    margin-top: 40px;
     width: 100%;
-  }
-  
-  .submit input {
+}
+
+.submit input {
     background-color: rgb(255, 98, 0);
     width: 500px;
     transition: 0.3s ease-in-out;
-  }
-  
-  .submit input:hover {
+}
+
+.submit input:hover {
     transform: scale(1.1);
     cursor: pointer;
     opacity: 0.8;
-  }
-  /* Responsive Design for Tablets (768px) */
+}
+
+/* Responsive Design for Tablets (768px) */
 @media screen and (max-width: 768px) {
   .contact-details {
-      margin: 0px 30px 30px 30px; /* Reduce side margins further */
-      height: auto; /* Allow dynamic height */
+      margin: 0px 30px 30px 30px;
+      height: auto;
       padding-bottom: 20px;
   }
 
   .contact-details h1 {
-      font-size: 45px; /* Adjust heading size */
+      font-size: 45px;
   }
 
   .contact-details p {
@@ -162,63 +163,60 @@ input{
   }
 
   .details {
-      flex-direction: column; /* Stack contact details vertically */
+      flex-direction: column;
       gap: 60px;
   }
 
   .email img, .phone img, .location img {
-      width: 40px; /* Reduce icon size */
+      width: 40px;
   }
 
   .form-container {
-      flex-direction: column; /* Stack form fields */
-      width: 100%; /* Take full width */
-      padding: 0 20px; /* Reduce space on sides */
+      flex-direction: column;
+      width: 100%;
+      padding: 0 20px;
   }
 
   .left-column, .right-column {
-      width: 100%; /* Make fields full width */
+      width: 100%;
   }
 
-  input
-  {
-    width: 500px;
-
+  input {
+      width: 500px;
   }
-textarea {
-      width: 100%; 
-      height: 55px; /* Increase height for better touch */
+
+  textarea {
+      width: 100%;
+      height: 55px;
       font-size: 18px;
   }
 
   textarea {
-      height: 220px; /* Adjusted textarea height */
+      height: 220px;
   }
 
   .submit {
-      width: 100%; /* Full width */
+      width: 100%;
       display: flex;
       justify-content: center;
-      
   }
 
   .submit input {
-      width: 50%; /* Full width button */
+      width: 50%;
       height: 55px;
       font-size: 20px;
   }
-
 }
 
 /* Responsive Design for Mobile (480px) */
 @media screen and (max-width: 480px) {
   .contact-details {
-      margin: 0px 15px; /* Even less side margin */
+      margin: 0px 15px;
       padding-bottom: 20px;
   }
 
   .contact-details h1 {
-      font-size: 35px; /* Smaller heading */
+      font-size: 35px;
   }
 
   .contact-details p {
@@ -226,15 +224,15 @@ textarea {
   }
 
   .details {
-      gap: 50px; /* Reduce space between contact items */
+      gap: 50px;
   }
 
   .email img, .phone img, .location img {
-      width: 35px; /* Further reduce icon size */
+      width: 35px;
   }
 
   .form-container {
-      width: 100%; /* Full width */
+      width: 100%;
       padding: 0 10px;
   }
 
@@ -243,18 +241,18 @@ textarea {
   }
 
   input, textarea {
-    width: 300px;
-    margin: auto;
-      /* width: 80%; */
-      height: 50px; /* More comfortable height */
+      width: 300px;
+      margin: auto;
+      height: 50px;
       font-size: 18px;
   }
+
   .enter-details label{
-    margin-left: 18px;
+      margin-left: 18px;
   }
 
   textarea {
-      height: 200px; /* Reduce textarea height */
+      height: 200px;
   }
 
   .submit {
@@ -264,11 +262,10 @@ textarea {
   }
 
   .submit input {
-    padding: 0px 20px ;
+      padding: 0px 20px;
       width: 100%;
       height: 50px;
       font-size:20px;
       font-weight: 700;
   }
-
 }

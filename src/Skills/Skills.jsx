@@ -86,10 +86,6 @@ const Skills = () => {
                 <img src={tailwind} alt="" />
                 <h3>Tailwindcss</h3>
             </div>
-            <div className="springboot">
-                <img src={springboot} alt="" />
-                <h3>SpringBoot</h3>
-            </div>
         </div>
       </div>
   )
